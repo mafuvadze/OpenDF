@@ -23,13 +23,12 @@ public class ApplicationConfig extends Application {
      */
     private Set<Class<?>> getRestResourceClasses() {
         Set<Class<?>> resources = new java.util.HashSet<Class<?>>();
-        
-        resources.add(lk.ucsc.score.apps.service.UserFacadeREST.class);
-        resources.add(lk.ucsc.score.apps.service.ProjectFacadeREST.class);
         resources.add(lk.ucsc.score.apps.service.DiskimageFacadeREST.class);
-        resources.add(lk.ucsc.score.apps.service.NoteFacadeREST.class);
-        resources.add(lk.ucsc.score.apps.service.ReportFacadeREST.class);
         resources.add(lk.ucsc.score.apps.service.LogFacadeREST.class);
+        resources.add(lk.ucsc.score.apps.service.NoteFacadeREST.class);
+        resources.add(lk.ucsc.score.apps.service.ProjectFacadeREST.class);
+        resources.add(lk.ucsc.score.apps.service.ReportFacadeREST.class);
+        resources.add(lk.ucsc.score.apps.service.UserFacadeREST.class);
         return resources;
     }
     
